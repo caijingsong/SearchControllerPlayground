@@ -10,7 +10,10 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        definesPresentationContext = true
         automaticallyAdjustsScrollViewInsets = false
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.title = "FirstViewController"
